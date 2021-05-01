@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner10{
+        background-image: url(img/bg.jpg) ;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }   
+
+    .banner10 h1{
+        font-size: 3em;
+        color: #fff;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+.accordion .card{
+  border-radius: 0;
+  background: none;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.accordion .card .card-header{
+  background: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 0;
+}
+
+.accordion .card-header h2{
+  font-size: 1rem;
+}
+
+.accordion .card-header .btn{
+  color: #5c6bc0;
+  width: 100%;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.accordion .card-header i{
+  font-size: 1.3rem;
+  position: absolute;
+  top: 15px;
+  right: 1rem;
+}
+
+.accordian .card-body{
+  color: #666;
+}
+
+@media (max-width: 768px) {
+    .banner10 h1{
+        font-size: 2em;
+        padding-top: 20%;
+        padding-bottom: 10%;
+        margin-top: -30px;
+    }
+
+    .accordion .card-header i{
+       font-size: 1rem;
+       top: 15px;
+      right: 0.5rem;
+    }
+
+    .accordion .card-header .btn{
+      width: 100%;
+      font-size: .8em;
+    }
+
+    .card-body{
+      font-size: 12px;
+    }
+}

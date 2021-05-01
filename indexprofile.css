@@ -1,0 +1,154 @@
+body{
+    
+    background-color: #fff;
+}
+
+/*jumbotron*/
+.banner10{
+        background-image: url(img/bg.jpg) ;
+        background-size: cover;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }   
+
+    .banner10 h1{
+        font-size: 3em;
+        color: #fff;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+.our-team{
+    padding: 40px 0 40px;
+    background: #333333;
+    margin-bottom: 10%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px #666666;
+}
+
+.our-team .pic{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+    /*background:#ff00ac;*/
+    position: relative;
+    z-index: 1;
+}
+
+.our-team .pic:before
+{
+    content: "";
+    width: 100%;
+    background: #ffffff;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0; 
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .pic:before
+{
+    height: 100%;
+}
+
+.our-team .pic:after
+{
+    content: "";
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: -12px; 
+    z-index: -1;
+}
+
+.our-team .pic img{
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: -12px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .pic img
+{
+    box-shadow: 0 0 0 0px #000000;
+    transform: scale(0.7);
+}
+
+.our-team .team-content
+{
+    margin-bottom: 30px;
+}
+
+.our-team .title{
+    font-size: 15px;
+    font-weight: 700;
+    color:#ffffff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color:#ffffff;
+    text-transform: capitalize;
+}
+
+.our-team .social{
+    width: 100%;
+    padding:0;
+    margin:0;
+ 
+    position: absolute;
+    bottom: -100px;
+    left:0;
+    transition: all 0.5 ease 0s;
+}
+
+.our-team:hover .social{
+    bottom:0;
+    background-color: #fff;
+}
+
+.our-team .social li{
+    display: inline-block;
+}
+
+.our-team .social li a{
+    display: block;
+    padding:10px;
+    font-size: 17px;
+    color: #000;
+    transition: all 0.s ease 0s;
+}
+
+.our-team .social li a:hover{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .banner10 h1{
+        font-size: 2em;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .our-team{
+        width: 75%;
+    }
+}

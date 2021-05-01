@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+   scroll-behavior: smooth;
+   background-color: #fff;
+}
+
+/*navbar*/
+nav{
+	border-bottom: 1px solid rgba(225,225,225,0.2);
+	z-index: 1;
+}
+
+.nav-link{
+	margin-left: 20px; 
+	font-size: 14px;
+	font-family: 'Poppins';
+	text-shadow: 2px 3px 4px #000000;
+}
+
+/*navbar > dropdown*/
+.dropdown-menu{
+	animation-name: atthover;
+	animation-duration: 1s;
+	animation-iteration-count: finite;
+}
+
+.dropdown:hover{
+	animation-play-state: running;
+}
+
+.dropdown:hover> .dropdown-menu{
+	display: block;
+}
+
+.dropdown-item:hover{
+	background-color: #5c6bc0;
+}
+
+@keyframes atthover{
+    0%{
+    	opacity: 0;
+    	margin-top: 30px;
+    }
+
+    50%{
+    	opacity: 1;
+    	margin-top: 0px;
+    }
+
+    100%{
+    	opacity: 100%;
+    }
+}
+
+/*jumbotron*/
+	.banner10{
+		background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(img/Background1.png) ;
+		background-size: cover;
+	}	
+
+	.banner10 h1{
+		font-size: 3em;
+		color: #fff;
+		text-align: center;
+		padding-top: 20%;
+	}
+	.text-berjalan{
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-right: 35%; 
+    font-size:24px; 
+    color: #fff;
+    padding-bottom: 10%
+}
+
+/*gallery*/
+.doly{
+	font-size: 2em;
+	margin: 10px;
+	color: #5c6bc0;
+}
+
+figcaption{
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+}
+
+/*carousel*/
+	.card-body button{
+		padding: 10px;
+		background: #5c6bc0;
+		border-radius: 10px;
+		border: none;
+	}
+	.card-body button a{
+		text-decoration: none;
+		color: #fff;
+	}
+/*visi misi*/
+	.timeline{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding-left: 2.5rem;
+	}
+
+	.timeline:before{
+		display: inline-block;
+		position: absolute;
+		content: "";
+		top: 2rem;
+		left: 2rem;
+		height: 1.5rem;
+		width: 1.5rem;
+		border: 2px solid #5c6bc0;
+		border-radius: 50%;
+		background: #5c6bc0;
+		z-index: 1;
+	}
+
+	.timeline:after{
+		content: "";
+		border-left: 2px solid #5c6bc0;
+		height: 100%;
+		position: absolute;
+		top: 2rem;
+		left: 2.7rem;
+		z-index: 0;
+	}
+
+	.timeline:last-child:after{
+		content: none;
+	}
+
+	.timeline .timeline-date{
+		padding-right: 3rem; 
+	}
+
+	.timeline .timeline-date span{
+		display: inline-block;
+		font-weight: bold;
+		color: #fff;
+		background: #5c6bc0;
+		border-radius: 10px;
+		padding: .2rem .4rem;
+		margin: 2rem 0 0 2rem;
+	}
+
+	.timeline .timeline-info{
+		flex: 1;
+		margin: 1rem 0 0 1rem;
+		line-height: 2rem;
+		color: #666;
+	}
+
+/*footer desktop*/
+footer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 40px 50px;
+	background: #111;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+footer .oneone{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+footer .oneone .sec{
+	margin-right: 30px;
+}
+
+footer .oneone .sec.aboutus{
+	width: 40%;
+}
+
+footer .oneone h2{
+	position: relative;
+	text-shadow: 3px 3px 1px black;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+footer .oneone h2:before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #5c6bc0;
+}
+
+footer p{
+	color: #999;
+	font-size: 16px;
+}
+
+.sci{
+	margin-top: 20px;
+	display: flex;
+}
+
+.sci li{
+	list-style: none;
+}
+
+.sci li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #222;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.sci li a:hover{
+	background: #5c6bc0;
+}
+
+.sci li a .fa{
+	color: #fff;
+	font-size: 20px;
+}
+
+.contact{
+	position: relative;
+	width: 25%;
+}
+
+.contact .info{
+	position: relative;
+}
+
+.contact .info li{
+	display: flex;
+	margin-bottom: 16px;
+	font-size: 20px;
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+	color: #999;
+}
+
+.contact .info li a{
+	color: #999;
+	text-decoration: none;
+}
+
+.contact .info li a:hover{
+	color: #fff;
+}
+
+.maps{
+	width: calc(35% - 60px);
+	margin-right: 0 !important;
+}
+
+.copyrightText{
+	width: 100%;
+	background: #181818;
+	padding: 4px 70px;
+	text-align: center;
+	color: #999;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+@media (max-width: 768px) {
+	.banner10 h1{
+		font-size: 2em;
+	}
+	.text-berjalan{
+  		font-size: 1em;
+	}
+
+	.doly{
+		font-size: 1.2em;
+	}
+
+	.timeline-info p{
+		font-size: 12px;
+	}
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+	.banner10{
+        margin-top: -120px; 
+        width: 100%;
+	}
+}
+@media (max-width: 992px) {
+	
+
+	footer{
+		padding: 40px;
+	}
+	footer .oneone{
+		flex-direction: column;
+	}
+	footer .oneone .sec{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	footer .oneone .sec.aboutus,
+	.contact,
+	.maps{
+		width: 100%;
+	}
+	.copyrightText{
+	padding: 10px 30px;
+    }
+
+    .item{
+		width: 50%;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
